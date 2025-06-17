@@ -6,6 +6,7 @@
     </picture>
 </h1>
 
+# Optimized for standalone use outside of VCS. Developed/tested on Arch Linux 
 
 # Welcome
 
