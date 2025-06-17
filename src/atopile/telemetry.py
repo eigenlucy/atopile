@@ -152,7 +152,7 @@ def get_current_git_hash() -> Optional[str]:
         try:
             repo = git.Repo(search_parent_directories=True)
             return repo.head.commit.hexsha
-        except (git.InvalidGitRepositoryError, git.NoSuchPathError):
+        except (git.InvalidGitRepositoryError, git.NoSuchPathError, ValueError):
             return None
     except ImportError:
         return None
